@@ -14,12 +14,17 @@ public class CountDigit {
 //        return s.length();
 
 //***********************(TC = o(log10 n))*********************************
-        int count = 0;
+//        int count = 0;
+//        n = Math.abs(n);
+//        while(n > 0){
+//            count++;
+//            n /= 10;
+//        }
+//        return count;
+
+// ***********************(TC = o(1))*********************************
         n = Math.abs(n);
-        while(n > 0){
-            count++;
-            n /= 10;
-        }
+        int count = (int) Math.floor(Math.log10(n)) + 1;
         return count;
     }
 }
