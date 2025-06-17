@@ -6,6 +6,7 @@ public class Reverse_a_number {
         System.out.println(reverse(n));
     }
     public static int reverse(int n){
+//****************************(TC - o(log10 n) )***********************************
         int temp = Math.abs(n);
         int ans = 0;
         while(temp > 0){
